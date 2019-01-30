@@ -1,35 +1,35 @@
-[![Gem Version](https://badge.fury.io/rb/retailcrm.svg)](http://badge.fury.io/rb/retailcrm)
+версия для retailCRM API v5
 
-retailCRM API ruby client
-=========================
+Ruby-клиент для retailCRM API
+=============================
 
 
-### Install
+### Установка
 
 ```
 gem install retailcrm
 ```
 
-### Examples
+### Примеры использования
 
-#### Get order
+#### Получение информации о заказе
 
 ```ruby
 require 'retailcrm'
 
-api = Retailcrm.new('https://yourcrmname.retailcrm.pro', 'yourApiKeyHere')
+api = Retailcrm.new('https://yourcrmname.retailcrm.ru', 'yourApiKeyHere')
 
 response = api.orders_get(345, 'id').response
 order = response[:order]
 
 ```
 
-#### Create order
+#### Создание заказа
 
 ```ruby
 require 'retailcrm'
 
-api = Retailcrm.new('https://yourcrmname.retailcrm.pro', 'yourApiKeyHere')
+api = Retailcrm.new('https://yourcrmname.retailcrm.ru', 'yourApiKeyHere')
 
 order = {
   :externalId => 171,
@@ -69,7 +69,10 @@ order_id = response[:id]
 
 ```
 
-#### Documentation
+#### Документация REST API
 
-* http://www.retailcrm.pro/docs/Developers/ApiVersion3
-* http://www.rubydoc.info/gems/retailcrm
+http://www.retailcrm.ru/docs/Developers/ApiVersion3
+
+#### Документация API библиотеки
+
+http://www.rubydoc.info/gems/retailcrm
