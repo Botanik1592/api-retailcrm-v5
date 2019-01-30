@@ -6,8 +6,9 @@ Ruby-клиент для retailCRM API
 
 ### Установка
 
+Gemfile:
 ```
-gem install retailcrm
+gem 'retailcrm', github: 'Botanik1592/api-retailcrm-v5'
 ```
 
 ### Примеры использования
